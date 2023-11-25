@@ -1,0 +1,423 @@
+/* Adicione a importação das fontes no início do seu CSS, se necessário */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/image/INICIO.webp') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gradiente de preto transparente */
+    z-index: -1; /* Coloca o pseudoelemento atrás do conteúdo */
+}
+
+
+/* Navbar */
+nav {
+    background-color: rgb(14, 14, 53);
+    padding: 1px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px; /* Tamanho do logo da empresa */
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centraliza os itens na horizontal */
+    align-items: center;
+}
+
+ul li {
+    margin: 0 10px; /* Reduzi a margem para melhor centralização */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex; /* Ocupa toda a largura do espaço disponível */
+    padding: 10px; /* Adicionei um padding para melhorar a aparência e clicabilidade */
+}
+
+/* Logo do WhatsApp na Navbar */
+.whatsapp-logo {
+    width: 40px; /* Tamanho do logo do WhatsApp */
+    padding: 2px;
+    border-radius: 50%; /* Deixa a borda arredondada */
+    animation: rotateWhatsapp 2s linear infinite; /* Adiciona a animação */
+}
+
+@keyframes rotateWhatsapp {
+    from {
+        transform: rotateY(0deg); /* Começa a rotação a partir de 0 graus (eixo Y) */
+    }
+    to {
+        transform: rotateY(360deg); /* Termina a rotação em 360 graus (eixo Y) */
+    }
+}
+
+/*home*/
+#home {
+    background-size: cover;
+    color: #fff; /* Cor padrão para o texto sobre o fundo escuro */
+    padding: 50px;
+    text-align: center;
+    position: relative; /* Adiciona posição relativa para usar pseudoelemento ::before */
+}
+
+#home::before {
+    content: none; /* Remove o gradiente de preto transparente na seção "home" */
+}
+
+#home h1 {
+    font-weight: bold;
+    font-size: 2.5em; /* Tamanho do título */
+    font-family: 'Montserrat', sans-serif; /* Fonte mais corporativa para o título */
+    color: rgb(42, 24, 146); /* Cor de destaque para o título */
+}
+
+#home h2 {
+    font-size: 1.2em; /* Tamanho do subtitulo */
+    font-family: 'IBM Plex Sans', sans-serif; /* Fonte mais corporativa para o subtitulo */
+    
+}
+
+#home p {
+    font-size: 1.5em; /* Tamanho do texto do parágrafo aumentado para ter destaque */
+    font-weight: bold; /* Adiciona negrito para destaque */
+    font-family: 'Arial', sans-serif; /* Fonte padrão para o parágrafo */
+}
+
+#sobre {
+    background-size: cover;
+    color: #fff; /* Cor padrão para o texto sobre o fundo escuro */
+    padding: 50px;
+    text-align: center;
+}
+
+#sobre::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o pseudoelemento atrás do conteúdo */
+}
+
+#sobre h2 {
+    font-size: 2em; /* Tamanho do subtitulo aumentado para destaque */
+    color: #0004ff; /* Cor de destaque para o subtitulo */
+}
+
+#sobre h3 {
+    font-size: 1.2em; /* Tamanho do título */
+    font-weight: bold; /* Adiciona negrito para destaque */
+    color: #fff; /* Cor do título */
+}
+
+#sobre p {
+    font-size: 1.2em; /* Tamanho do texto do parágrafo */
+    line-height: 1.6; /* Espaçamento entre linhas aumentado para melhor legibilidade */
+}
+
+/* Adicione mais estilos conforme necessário */
+
+#servicos {
+    background-size: cover;
+    color: #fff; /* Cor padrão para o texto sobre o fundo escuro */
+    padding: 50px;
+    text-align: center;
+}
+
+#servicos::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Coloca o pseudoelemento atrás do conteúdo */
+}
+
+
+#servicos h2 {
+    font-size: 2em;
+    color: #1900ff;
+}
+
+.servico {
+    margin-bottom: 30px;
+}
+
+.servico img {
+    width: 40%; /* Garante que a imagem ocupe 100% da largura do contêiner */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.servico h3 {
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.servico p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Adicione mais estilos conforme necessário */
+
+.parcerias {
+    margin-top: 30px;
+}
+
+.parceria {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.parceiro img {
+    width: 240px; /* Ajuste o tamanho do logo do parceiro conforme necessário */
+    margin-right: 15px;
+}
+
+.parceria p {
+    font-size: 2.2em; /* Ajuste conforme necessário */
+}
+
+/* Tamanho de fonte para os títulos dos serviços */
+.servico h3 {
+    font-size: 1.4em; /* Ajuste conforme necessário */
+}
+
+/* Tamanho de fonte para os títulos das parcerias */
+.parcerias h3 {
+    font-size: 2em; /* Ajuste conforme necessário */
+}
+
+#portfolio {
+    margin-top: 30px;
+    text-align: center; /* Centraliza o título e o conteúdo */
+}
+
+#portfolio h2 {
+    font-size: 1.8em; /* Tamanho do título */
+}
+
+.portfolio-setor {
+    margin-top: 20px;
+}
+
+.portfolio-item {
+    display: inline-block; /* Coloca os itens em linha */
+    margin: 10px; /* Espaçamento entre os itens */
+}
+
+.portfolio-item img {
+    width: 80px; /* Tamanho do logo do item */
+    display: block; /* Evita espaços extras abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do bloco */
+}
+
+/* Dentro da seção de Contato */
+
+#contato {
+    margin-top: 30px;
+    text-align: center; /* Centraliza o título e o conteúdo */
+}
+
+#contato h2 {
+    font-size: 1.8em; /* Tamanho do título */
+}
+
+/* Formulário de Contato */
+form {
+    max-width: 600px; /* Largura máxima do formulário */
+    margin: 20px auto; /* Centraliza o formulário */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #14a7db; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e90b8; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Informações de Contato */
+.informacoes-contato {
+    margin-top: 20px;
+}
+
+.informacoes-contato p {
+    font-size: 1.2em; /* Tamanho do texto de informações de contato */
+}
+
+/* Adicione estilos adicionais conforme necessário */
+
+/* Ajuste do campo de assinatura no rodapé */
+footer {
+    text-align: center;
+    padding: 20px 0; /* Ajuste o preenchimento conforme necessário */
+}
+
+.informacoes-contato p {
+    margin: 5px 0;
+}
+
+/* Estilos para a Imagem de Localização */
+.localizacao-img {
+    width: 100%; /* Ajusta a largura da imagem */
+    max-width: 400px; /* Define a largura máxima para evitar distorções em telas maiores */
+    display: block; /* Garante que a imagem não ultrapasse os limites do contêiner */
+    margin: 20px auto; /* Centraliza a imagem horizontalmente com uma margem superior de 20px */
+}
+
+#endereco {
+    text-align: center;
+}
+
+#endereco p {
+    margin-top: 10px; /* Adicione margem superior para espaçamento */
+}
+
+/* Adaptações para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    .logo img {
+        width: 80%; /* Reduz o tamanho do logo em telas menores */
+    }
+
+    nav {
+        padding: 5px;
+    }
+
+    ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    #home h1 {
+        font-size: 2em;
+    }
+
+    #home h2 {
+        font-size: 1em;
+    }
+
+    #home p {
+        font-size: 1.2em;
+    }
+
+    #sobre h2 {
+        font-size: 1.5em;
+    }
+
+    #sobre h3 {
+        font-size: 1em;
+    }
+
+    #sobre p {
+        font-size: 1em;
+    }
+
+    #servicos h2 {
+        font-size: 1.5em;
+    }
+
+    .servico img {
+        width: 100%; /* Faz com que as imagens ocupem a largura total do contêiner */
+    }
+
+    .servico h3 {
+        font-size: 1.2em;
+    }
+
+    .servico p {
+        font-size: 1em;
+    }
+
+    .parceria p {
+        font-size: 1.5em;
+    }
+
+    #portfolio h2 {
+        font-size: 1.5em;
+    }
+
+    .portfolio-item img {
+        width: 60px;
+    }
+
+    #contato h2 {
+        font-size: 1.5em;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    label,
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .informacoes-contato p {
+        font-size: 1em;
+    }
+
+    .localizacao-img {
+        max-width: 100%;
+    }
+
+    #endereco p {
+        font-size: 1em;
+    }
+}
